@@ -5,8 +5,11 @@ const App = () => (
   <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
+      <div className="App-title">useEffect hook example</div>
     </header>
-    <main role="main">Some components</main>
+    <main className="App-main" role="main">
+      <div>Some components</div>
+    </main>
   </div>
 );
 
