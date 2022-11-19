@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.scss';
+import List from './components/List';
 
+const array = ['fistElement', 'secondElement', 'thirdElement'];
 const App = () => (
   <div className="App">
     <header className="App-header">
@@ -8,7 +10,9 @@ const App = () => (
       <div className="App-title">useEffect hook example</div>
     </header>
     <main className="App-main" role="main">
-      <div>Some components</div>
+      <div className="App-list">
+        <List value={array} />
+      </div>
     </main>
   </div>
 );
