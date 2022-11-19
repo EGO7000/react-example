@@ -1,11 +1,14 @@
 import React from 'react';
 import Element from './Element';
 
-const List = ({ value }) => (
-  <div>
-    List length: {value.length} <br />
-    <Element value={value[0]} />
-  </div>
-);
+const List = ({ value }) => {
+  const ListItem = value.map((elementValue) => (
+    <Element
+      key={elementValue.toString()}
+      value={elementValue}
+    />
+  ));
+  return <ul>{ListItem}</ul>;
+};
 
 export default List;

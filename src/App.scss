@@ -1,7 +1,14 @@
+$list-width: 230px;
+$divide: 1px;
 $main-color: #61dafb;
-$main-paddings: 15px 30px;
+$paddings-vertical: 15px;
+$paddings-horizontal: 30px;
+$main-paddings: $paddings-vertical $paddings-horizontal;
 $header-color: #fff;
 $header-bg-color: #282c34;
+$base-font: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+  'Droid Sans', 'Helvetica Neue', sans-serif;
 
 .App {
   text-align: center;
@@ -33,6 +40,33 @@ $header-bg-color: #282c34;
 
 .App-main {
   padding: $main-paddings;
+  display: flex;
+  justify-content: center;
+}
+
+.App-list {
+  display: block;
+  width: $list-width;
+  font-family: $base-font;
+  input {
+    $w: $list-width - $paddings-horizontal * 2 - $divide * 4;
+    width: $w;
+    font-family: $base-font;
+    border: 1px solid $main-color;
+    color: $header-bg-color;
+    padding: $main-paddings;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    list-style: none;
+    li {
+      margin: 1px;
+      padding: $main-paddings;
+      background: $main-color;
+    }
+  }
 }
 
 @keyframes App-logo-spin {

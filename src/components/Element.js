@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Element = ({ value }) => <div>Element: {value}</div>;
+const Element = ({ value }) => <li>{value}</li>;
 
 export default Element;
