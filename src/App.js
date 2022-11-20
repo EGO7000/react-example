@@ -17,7 +17,8 @@ let array = [
 ];
 
 // его необходимо нормализировать
-array = array.map((item) => String(item));
+// array = array.map((item) => String(item));
+array = array.map((item) => `${item}`); // вероятно так быстрее
 
 const App = () => (
   <div className="App">
