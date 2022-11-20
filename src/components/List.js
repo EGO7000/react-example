@@ -18,10 +18,10 @@ const List = ({ value }) => {
     }
   }, [searchText, value]);
 
-  const ListItem = searchList.map((elementValue) => (
-    // .toString() как заглушка из документации,
-    // понятное дело, что с нормальным объектом там будет id из базы
-    <Element key={elementValue.toString()} value={elementValue} />
+  const ListItem = searchList.map((elementValue, index) => (
+    // {index} как заглушка из документации, понятное дело,
+    // что с нормальным объектом там будет id из базы
+    <Element key={index} value={elementValue} />
   ));
 
   return (
