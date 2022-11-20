@@ -17,10 +17,6 @@ const App = () => (
     </header>
     <main className="App-main" role="main">
       <div className="App-list">
-        <input
-          type="text"
-          placeholder="Введите строку поиска..."
-        />
         <List value={array} />
       </div>
     </main>

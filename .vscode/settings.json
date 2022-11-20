@@ -1,11 +1,11 @@
 {
 	"html.format.wrapAttributes": "force-aligned",
-	"html.format.wrapLineLength": 60,
+	"html.format.wrapLineLength": 80,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"eslint.nodeEnv": "",
 	"prettier.semi": true,
 	"prettier.singleAttributePerLine": false,
-	"prettier.printWidth": 60,
+	"prettier.printWidth": 80,
 	"prettier.tabWidth": 2,
 	"prettier.useTabs": false
 }
