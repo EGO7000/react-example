@@ -11,9 +11,13 @@ const List = ({ value }) => {
       document.title = `useEffect hook example`;
     } else {
       const result = value.filter((elementValue) =>
-        elementValue.toLowerCase().includes(searchText)
+        elementValue.toLowerCase().includes(searchText.toLowerCase())
       );
-      setSearchList(result);
+      if (!result.length) {
+        setSearchList(['Ничего не найдено!']);
+      } else {
+        setSearchList(result);
+      }
       document.title = `Найдено элементов: ${result.length}`;
     }
   }, [searchText, value]);
