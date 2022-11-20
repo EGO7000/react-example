@@ -3,19 +3,7 @@ import './App.scss';
 import List from './components/List';
 
 // входной массив может состоять из любых значений:
-let array = [
-  'fistElement',
-  'secondElement',
-  'secondElement',
-  0,
-  1,
-  '',
-  ' ',
-  null,
-  undefined,
-  'thirdElement',
-];
-
+let array = ['fistElement', 'secondElement', 'thirdElement'];
 // его необходимо нормализировать
 // array = array.map((item) => String(item));
 array = array.map((item) => `${item}`); // вероятно так быстрее

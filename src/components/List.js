@@ -24,7 +24,7 @@ const List = ({ value }) => {
 
   const ListItem = searchList.map((elementValue, index) => (
     // {index} как заглушка из документации, понятное дело,
-    // что с нормальным объектом там будет id из базы
+    // что с нормальным объектом тут будет id из базы
     <Element key={index} value={elementValue} />
   ));
 
