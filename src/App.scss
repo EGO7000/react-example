@@ -4,12 +4,16 @@ $radius: 5px;
 $paddings-vertical: 15px;
 $paddings-horizontal: 30px;
 $main-paddings: $paddings-vertical $paddings-horizontal;
-$main-color: #61dafb;
+$main-color: #ffba31;
 $header-color: #fff;
-$header-bg-color: #282c34;
-$base-font: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-  'Droid Sans', 'Helvetica Neue', sans-serif;
+$header-bg-color: #001c42;
+$body-bg-color: #4c638e;
+$base-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+:root {
+  --body-bg-color: #{$body-bg-color};
+}
 
 .App {
   text-align: center;
